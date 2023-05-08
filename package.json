@@ -1,0 +1,21 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "A Jest + npm lab session",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest test"
+  },
+  "author": "Simon Andersson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "A Jest + npm lab session"
+  },
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
+}
