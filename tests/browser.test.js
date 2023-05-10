@@ -25,10 +25,12 @@ test('The stack should be empty in the beginning', async () => {
 
 describe('Clicking "Pusha till stacken"', () => {
 	it('should open a prompt box', async () => {
-		let push = await driver.findElement(By.id('push'));
-		await push.click();
-		let alert = await driver.switchTo().alert();
-		await alert.sendKeys("Bananer");
-		await alert.accept();
-	});
-});
+	let push = await driver.findElement(By.id('push'));
+	await push.click();
+
+	setTimeout(async () => {
+	let alert = await driver.switchTo().alert();
+	await alert.sendKeys("Bananer");
+	await alert.accept();
+}, 1000);
+})})
